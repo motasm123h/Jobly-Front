@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffefe;
+  position: relative;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card-login {
+  display: flex;
+  width: 800px;
+  max-width: 90%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.left-login {
+  flex: 1;
+  background: url('../assets/cccc.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-login {
+  display: none;
+}
+
+.right-login {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.siteName-login {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #6a0dad;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIcon-login {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  animation: textFadeIn 1s ease-in-out;
+}
+
+@keyframes textFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.inputContainer-login {
+  margin-bottom: 20px;
+}
+
+.inputContainer-login input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.inputContainer-login input:focus {
+  border-color: #6a0dad;
+}
+
+.passwordContainer-login {
+  position: relative;
+}
+
+.togglePassword-login {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+}
+
+.error-login {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loginButton-login, .registerButton-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #020202;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.loginButton-login:hover, .registerButton-login:hover {
+  background: #4b0082;
+  transform: scale(1.05);
+}
+
+span {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #bbb;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+span a {
+  color: #8a2be2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+span a:hover {
+  color: #4b0082;
+}

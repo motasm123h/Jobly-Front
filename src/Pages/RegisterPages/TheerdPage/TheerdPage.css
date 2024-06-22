@@ -1,0 +1,91 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.card {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  max-height: 90%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.siteName {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.searchIcon {
+  margin-left: 10px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputContainer {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shar-image {
+  position: relative;
+}
+
+.shar-image button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.shar-image img {
+  width: 100%;
+  height: auto;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.registerButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}

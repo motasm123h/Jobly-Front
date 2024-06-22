@@ -1,0 +1,57 @@
+/* NavBar.css */
+.nav {
+    background-color:rgb(27, 18, 100);
+    color: #151212; /* تغيير اللون ليكون أكثر وضوحاً */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.navbar-left {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-left ul li {
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out; /* تحويل التأثير */
+}
+
+.navbar-left ul li:hover {
+    transform: translateY(-3px); /* تغيير الموضع عند التحويم */
+}
+
+.navbar-left ul li .nav-link {
+    display: flex; /* جعل النص مع الأيقونة في نفس السطر */
+    align-items: center; /* توسيط النص عموديًا مع الأيقونة */
+    color: inherit; /* استخدام لون النص الأصلي */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-left ul li .nav-link:hover {
+    color: #3f51b5; /* تغيير لون النص عند التحويم */
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+.navbar-right h1 {
+    margin: 0;
+}
