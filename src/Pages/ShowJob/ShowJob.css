@@ -1,0 +1,77 @@
+/* ShowJob.css */
+.jobs-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #cdc7ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-card {
+  background-color: #fff;
+  border-left: 5px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 22px;
+  color: #444;
+}
+
+.company-name,
+.job-description,
+.requirements {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-icons > * {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.action-icons > *:hover {
+  color: #007bff;
+}
+
+.delete-icon {
+  color: red;
+}
+
+.edit-icon {
+  color: #ff9800;
+}

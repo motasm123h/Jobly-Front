@@ -1,0 +1,77 @@
+/* src/components/Navbar.css */
+.navbar {
+  position: fixed; /* تثبيت الشريط في أعلى الصفحة */
+  top: 0;
+  width: 100%; /* لضمان امتداد الشريط على عرض الشاشة بالكامل */
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #192f91;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* ضمان أن الشريط يكون فوق جميع العناصر الأخرى */
+}
+
+.logo h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.searchIcon-register {
+  margin-left: 0.5rem;
+  color: #9d47ff;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* تقليل الفجوة لتوفير مساحة أكبر */
+  margin: 0; /* إزالة الهامش الافتراضي */
+  padding: 0; /* إزالة التباعد الداخلي الافتراضي */
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem; /* تكبير حجم الأيقونات */
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6347;
+}
+
+.profile-icon-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; /* مسافة بين الأيقونة وعناصر القائمة */
+}
+
+.profileIcon {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.profileIcon:hover {
+  color: #ff6347;
+}
