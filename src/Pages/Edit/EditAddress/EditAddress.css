@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffefe;
+  position: relative;
+  margin-top: 20px;
+}
+
+.edit-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: secondPage-fadeIn 1s ease-in-out;
+}
+
+@keyframes secondPage-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.edit-location-card {
+  display: flex;
+  width: 800px;
+  max-width: 90%;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  animation: secondPage-slideIn 1s ease-in-out;
+}
+
+@keyframes secondPage-slideIn {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.edit-location-left {
+  flex: 1;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-location-right {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-location-siteName {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #6a0dad;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-location-searchIcon {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+}
+
+.edit-location-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  animation: location-textFadeIn 1s ease-in-out;
+}
+
+@keyframes location-textFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.edit-location-inputContainer {
+  margin-bottom: 20px;
+}
+
+.edit-location-inputContainer input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.edit-location-inputContainer input:focus {
+  border-color: #6a0dad;
+}
+
+.edit-location-error-address {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edit-location-registerButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #18b107;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.edit-location-registerButton:hover {
+  background: #095005;
+  transform: scale(1.05);
+}
+
+span {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #bbb;
+  text-align: center;
+  display: block;
+  animation: secondPage-fadeIn 1s ease-in-out;
+}
+
+span a {
+  color: #8a2be2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+span a:hover {
+  color: #4b0082;
+}

@@ -1,0 +1,19 @@
+.section-container {
+    margin-bottom: 20px;
+  }
+  
+  .section-container h3 {
+    cursor: pointer;
+    color: #0e0e52;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .selected-section {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    
+  }
+  
